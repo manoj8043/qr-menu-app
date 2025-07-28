@@ -25,6 +25,7 @@ function Navbar() {
           <FontAwesomeIcon icon={faEllipsisV} />
         </button>
       </div>
+      <div className="app-container"></div>
     </div>
   );
 }

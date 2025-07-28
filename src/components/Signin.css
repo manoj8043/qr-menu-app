@@ -1,0 +1,27 @@
+.container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-link span {
+  color: blue;
+  cursor: pointer;
+}

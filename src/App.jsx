@@ -1,27 +1,18 @@
-import React from "react";
-import Nav from "./components/Navbar";
-import Hero from "./components/Hero";
-import Menu from "./components/Menu";
 import About from "./components/About";
-import Support from "./components/Support";
-import Footer from "./components/Footer";
+import Home from "./components/Home";
 import "./App.css";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import Sign from "./components/Sign.jsx";
 
 function App() {
   return (
-    <div className="app-container">
-      <Nav />
-      <br />
-      <Hero />
-      <br />
-      <Menu />
-      <br />
-      <About />
-      <br />
-      <Support />
-      <hr />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Signin" element={<Sign />} />
+        <Route path="/Login" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
